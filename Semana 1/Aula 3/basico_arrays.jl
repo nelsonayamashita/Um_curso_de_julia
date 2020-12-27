@@ -26,11 +26,11 @@ md"## Inicializando Arrays"
 # ╔═╡ ea0a861a-47fe-11eb-1ff9-294db17d91a9
 v = [1, 2, 3, 4] # Vetor
 
-# ╔═╡ e0bfa57c-47fe-11eb-3e9a-794205d08ccc
-md"Em Julia podemos usar uma sintaxe mais simples e próxima da matemática para definir *arrays*"
-
 # ╔═╡ 2b81e872-47ff-11eb-27a7-cb78b9aa51f4
 size(v)
+
+# ╔═╡ e0bfa57c-47fe-11eb-3e9a-794205d08ccc
+md"Em Julia podemos usar uma sintaxe mais simples e próxima da matemática para definir *arrays*"
 
 # ╔═╡ 1190b8bc-47ff-11eb-056b-618ab6b14ba4
 w = [1 2 3
@@ -43,13 +43,13 @@ size(w)
 md"## Acessando os elementos"
 
 # ╔═╡ 52a680b6-47ff-11eb-1149-ffeee17a2414
-md"Como em muitas outras linguagens, utiliza-se a estrutura nome_do_array[i] para acessar o elemento de endereço(índice) **i**"
+md"Como em muitas outras linguagens, utiliza-se a estrutura `nome_do_array[i]` para acessar o elemento de endereço(índice) **i**"
 
 # ╔═╡ 438486e6-47ff-11eb-0e39-d17a13c252ae
 v[0]
 
 # ╔═╡ 493be4be-47ff-11eb-1692-957dd1fe5ce7
-md"Se você já programou em outras linguagens irá notar que ocorre um erro quando tentamos acessar o elemento de índice *0* em algum *array* em Julia. Isso ocorre pois em Julia *arrays* começam pelo endereço **1**. Foi decidido assim porque Julia é uma linguagem mais focada em matemática e computação matemática, onde índices geralmente começam no **1**"
+md"Se você já programou em outras linguagens irá notar que ocorre um erro quando tentamos acessar o elemento de índice **0** em algum *array* em Julia. Isso ocorre pois em Julia *arrays* começam pelo endereço **1**. Foi decidido assim porque Julia é uma linguagem mais focada em matemática e computação matemática, onde índices geralmente começam no **1**"
 
 # ╔═╡ b1ad4374-47ff-11eb-3a5b-d191dc065e2d
 v[1]
@@ -58,7 +58,7 @@ v[1]
 w[1]
 
 # ╔═╡ e77e624e-47ff-11eb-3e1a-73a1d8681886
-md"Repare que se o *array* for de duas dimensões, e escrevermos apenas a primeira, será considerada a primeira posição na segunda dimensão (mesma coisa que escrever w[1,1])"
+md"Repare que se o *array* for de duas dimensões, e escrevermos apenas a primeira, será considerada a primeira posição na segunda dimensão (mesma coisa que escrever `w[1,1]`)"
 
 # ╔═╡ cb7f64a8-47ff-11eb-2920-addbbcdc5397
 w[2]
@@ -85,7 +85,7 @@ md"Podemos também dar *slices*(cortar) os *arrays* utilizando o caractere `:`"
 w[:,2:3] # Matriz
 
 # ╔═╡ 3eded5d6-4801-11eb-2fee-95dcd63f2338
-md"## Gerando outros tipos de matriz"
+md"## Gerando outros tipos de Arrays"
 
 # ╔═╡ 80025b5a-4801-11eb-203b-c17c06772369
 md"A função `rand(intervalo, n, m)` gera uma matriz (n,m) com números aleatórios em um intervalo"
@@ -112,7 +112,7 @@ peao = load(download("https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png
 cavalo = load(download("https://image.flaticon.com/icons/png/512/32/32648.png"))
 
 # ╔═╡ 90a96e2e-4803-11eb-3ee4-49dff8e2f190
-A5 = rand([peao, cavalo], 4, 4)
+A5 = rand([peao, cavalo], 3, 3)
 
 # ╔═╡ b14e3e7a-4803-11eb-1c76-63413127d092
 md"## Modificando os Arrays"
@@ -125,7 +125,7 @@ begin
 end
 
 # ╔═╡ 434350e0-4804-11eb-1692-4bb46d381220
-C = fill(peao, 4, 4)
+C = fill(peao, 3, 3)
 
 # ╔═╡ 52d49dd6-4804-11eb-33aa-a10d20989cef
 begin
@@ -218,8 +218,8 @@ md"Em Julia podemos facilmente concatenar(juntar) arrays os escrevendo como elem
 # ╟─633f5b38-47fe-11eb-1e13-6df4abeb2acf
 # ╟─c4b9e1ba-47fe-11eb-3ef9-adc938004559
 # ╠═ea0a861a-47fe-11eb-1ff9-294db17d91a9
-# ╟─e0bfa57c-47fe-11eb-3e9a-794205d08ccc
 # ╠═2b81e872-47ff-11eb-27a7-cb78b9aa51f4
+# ╟─e0bfa57c-47fe-11eb-3e9a-794205d08ccc
 # ╠═1190b8bc-47ff-11eb-056b-618ab6b14ba4
 # ╠═2ec8be8e-47ff-11eb-0cdc-9dc26dde2cfa
 # ╟─371a5fb6-47ff-11eb-0c24-2d1770e56da5
