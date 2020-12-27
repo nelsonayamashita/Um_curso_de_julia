@@ -2,3 +2,4 @@
 ## Índice
  - [Aula 1 - Procesamento de Imagem](./Aula%201)
  - [Aula 2 - Noções de abstações](./Aula%202)
+ - [Aula 3 - O Básico de Arrays](./Aula%203)
